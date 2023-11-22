@@ -177,10 +177,10 @@ nav{
 
 .hero-info h1{
     font-weight: 600;
-    line-height: 94px;
+    line-height: 66px;
     margin: 0px 0px 15px;
     color: var(--secondary-text-color);
-    font-size: 6.92vw;
+    font-size: 4.3vw;
 }
 
 .hero-info h4{
@@ -235,29 +235,47 @@ nav{
     color: #ffffff;
 }
 
-@media (max-width:767px) {
-   .hero .hero-info{
-        max-width: 321px;
-        margin-top: 40px;
-    }
-    .hero-info h1{
-        line-height: 54px;
-        font-size: 10.92vw;
-    }
-    /* upcoming events */
 
-    .main-container{
-        top: 27%;
-        right: 0;
-    }
-    .event h2{
-        font-size: 1.5rem;
-    }
-}
 
 .hero-info .cta-btn:hover{
     background-color: rgb(5, 5, 5);
 }
+
+
+.vision {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 70%;
+    margin: 50px auto;
+    padding: 50px;
+    background-color: rgb(233, 250, 255);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.445)
+}
+
+@media (max-width:767px) {
+    .hero .hero-info{
+         max-width: 321px;
+         margin-top: 100px;
+     }
+     .hero-info h1{
+         line-height: 54px;
+         font-size: 10.92vw;
+     }
+     /* upcoming events */
+ 
+     .main-container{
+         top: 27%;
+         right: 0;
+     }
+     .event h2{
+         font-size: 1.5rem;
+     }
+
+     .vision{
+        width: 90%;
+     }
+ }
+
 
 /* About section */
 .about.container{
@@ -366,7 +384,7 @@ nav{
 .achievements-section {
     max-width: 100%;
     margin: 70px auto;
-    padding: 50px;
+    padding: 10px;
     background-color: #f8faff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.37);
    
@@ -378,7 +396,7 @@ nav{
     border-radius: 5px;
     width: 70%;
     margin: 50px auto;
-    padding: 10px;
+    padding: 30px;
     background-color: #fff;
     box-shadow: 0 0 10px rgb(0, 0, 0)
 }
@@ -423,11 +441,19 @@ nav{
 
 /* admission */
 .adm{
-    width: 100%;
+    width: 85%;
+    margin: 0px auto;
+    justify-content: space-between;
+    align-items: center;
 }
 .adm h2{
     font-weight: 300;
 
+}
+
+.adm video{
+    width: 500px;
+    height: 220px;
 }
 
 
@@ -440,7 +466,10 @@ nav{
     position: relative;
     display: inline-block;
 }
-
+    .ppp a{
+    margin: 20px 10px;
+    
+    }
 
   .prospectus a:hover{
    color: white;
@@ -449,7 +478,7 @@ nav{
  .prospectus a::before {
     content: '';
     background-color: #212529;
-    position: absolute;
+    position: absolute; 
     left: 0;
     bottom: 0 ;
     width: 100%;
@@ -476,6 +505,8 @@ nav{
     right: 30px;
     position: fixed;
 }
+
+
 .btn-whatsapp-pulse {
 	background: #25d366;
 	color: white;
@@ -495,6 +526,11 @@ nav{
 	animation-duration: 1.5s;
 	animation-timing-function: ease-out;
 	animation-iteration-count: infinite;
+    z-index: 5;
+}
+.btn-whatsapp-pulse:hover {
+	
+	color: var(--primary-text-color);
 }
 
 @keyframes pulse {
@@ -553,9 +589,6 @@ ul{
 }
 /* footer */
 
-  footer{
-    margin-top: 70px;
-  }
   footer a{
     color: #bbbbbb;   
     font-weight: 300;
@@ -570,6 +603,8 @@ ul{
 .footer{
 	background-color: #24262b;
     padding: 70px 0;
+    margin-top: 70px;
+    padding-bottom: 20px;
 }
 .footer-col{
    width: 25%;
@@ -596,6 +631,9 @@ ul{
 .footer-col ul li:not(:last-child){
 	margin-bottom: 10px;
 }
+.footer-col ul{
+    padding: 0px;
+}
 .footer-col ul li a{
 	font-size: 16px;
 	text-transform: capitalize;
@@ -610,6 +648,9 @@ ul{
 	color: #ffffff;
 	padding-left: 8px;
 }
+.footer-col .media{
+    margin: 50px auto;
+}
 .footer-col .social-links a{
 	display: inline-block;
 	height: 40px;
@@ -622,11 +663,15 @@ ul{
 	color: #ffffff;
 	transition: all 0.5s ease;
 }
+
 .footer-col .social-links a:hover{
 	color: #24262b;
 	background-color: #ffffff;
 }
 
+.footer-col p{
+    color: #fff;
+}
 /*responsive*/
 @media(max-width: 767px){
   .footer-col{
@@ -642,3 +687,76 @@ ul{
  .pcont{
     width: 280px;
  }
+
+
+
+ .popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* The actual popup */
+  .popup .popuptext {
+    visibility: hidden;
+    width: 250px;
+    background-color: rgb(1, 50, 97);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+  }
+  
+  /* Popup arrow */
+  .popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+  
+  /* Toggle this class - hide and show the popup */
+  .popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+  }
+  
+  /* Add animation (fade in the popup) */
+  @-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+  }
+  
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+  }
+      /* Add a class to style the hover effect */
+      .popup:hover .popuptext {
+        visibility: visible;
+        -webkit-animation: fadeIn 1s;
+        animation: fadeIn 1s;
+      }
+  
+      /* Additional styling for the image */
+      .popuptext img {
+        width: 100%; /* Make the image fill the popup */
+        border-radius: 6px; /* Optional: add border-radius to the image */
+      }
+
+
+

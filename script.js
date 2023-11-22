@@ -61,5 +61,11 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
+ // When the user hovers over div, open the popup
+ function myFunction() {
+    var popup = document.getElementById("myPopup");
+    popup.classList.toggle("show");
+  }
+
 
 AOS.init();
