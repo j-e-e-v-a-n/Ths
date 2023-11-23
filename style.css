@@ -177,7 +177,7 @@ nav{
 
 .hero-info h1{
     font-weight: 600;
-    line-height: 56px;
+    line-height: 66px;
     margin: 0px 0px 15px;
     color: var(--secondary-text-color);
     font-size: 4.3vw;
@@ -248,7 +248,7 @@ nav{
     width: 70%;
     margin: 50px auto;
     padding: 50px;
-    background-color: rgb(233, 250, 255);
+    background-color: #f9f5ff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.445)
 }
 
@@ -284,7 +284,7 @@ nav{
     .about{
         margin: 50px auto;
         padding: 50px;
-        background-color: #f8faff;
+        background-color: #f1f5ff;
         border-radius: 25px;
         display: flex;
         flex-direction: column;
