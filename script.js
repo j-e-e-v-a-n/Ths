@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const eventsData = [
         {
             
-            title: 'UPCOMMING :  <br> ARTS DAY ',
+            title: 'UPCOMING :  <br> ARTS DAY ',
             date: 'November 22, 2023',
             location: 'School Auditorium',
             description: 'Visit our school and learn about our programs.'
