@@ -1,209 +1,81 @@
 <!DOCTYPE html>
-<html>
-<style>
-* {
-  box-sizing: border-box;
-}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Gallery</title>
+    <link rel="icon" href="./Images/Logo.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
 
-body {
-  margin: 0;
-  font-family: Arial;
-}
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
 
-.header {
-  text-align: center;
-  padding: 32px;
-}
+        h1 {
+            text-align: center;
+            color: #333;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
 
-.row {
-  display: -ms-flexbox; /* IE10 */
-  display: flex;
-  -ms-flex-wrap: wrap; /* IE10 */
-  flex-wrap: wrap;
-  padding: 0 4px;
-}
+        .img-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
 
-/* Create four equal columns that sits next to each other */
-.column {
-  -ms-flex: 25%; /* IE10 */
-  flex: 25%;
-  max-width: 25%;
-  padding: 0 4px;
-}
+        .img-grid img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+            cursor: pointer;
+        }
 
-.column img {
-  margin-top: 8px;
-  vertical-align: middle;
-  width: 100%;
-}
-
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 800px) {
-  .column {
-    -ms-flex: 50%;
-    flex: 50%;
-    max-width: 50%;
-  }
-}
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column {
-    -ms-flex: 100%;
-    flex: 100%;
-    max-width: 100%;
-  }
-}
-
-  /* nav */
-  .nav-items .fa-bars{
-    display: none;
-    float: right;
-    color: white;
-    outline: none;
-}
-
-nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 50px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1;
-}
-
-.logo img{
-    width: 75px;
-    border-radius: 40px;
-    outline: none;
-}
-
-.nav-items .menu{
-    display: flex;
-    column-gap: 28px;
-    margin-bottom: 0px;
-    
-}
-
-.nav-items .menu a{
-    color: var(--secondary-text-color);
-    font-size: 20px;
-    font-weight: 500;
-    transition: all ease 300ms;
-    outline: none;
-    text-decoration: none;
-    
-}
-
-.nav-items .menu a:hover{
-    color: var(--primary-color);
-}
-
-.nav-items .menu li{
-  list-style: none;
-}
-
-/* navbar responsive */
-
-@media (max-width:767px) {
-    .logo img{
-        width: 45px;
-    }
-    .nav-items .fa-bars{
-        display: block;
-    }
-
-    .nav-items .menu{
-        display: block;
-        position: absolute;
-        left: 32%;
-        right: 30px;
-        top: 110px;
-        text-align: right;
-        padding: 1.2rem;
-        background-color: rgb(0 0 0 / 40%);
-        border-radius: 30px;
-        display: none;
-        transition: all ease-in 500ms;
-        
-    }
-    .nav-items .menu.show{
-        display: block;
-        
-    }
-    .nav-items .menu li{
-        margin-bottom: 5px;
-        
-    }
-
-}
-
-.header{
-  margin-top: 100px;
-  margin-bottom: 0px;
-}
-</style>
+        .img-grid img:hover {
+            transform: scale(1.05);
+        }
+        .header{
+            margin-top: 10px;
+            margin-bottom: 0px;
+        }
+        .header {
+            text-align: center;
+            padding: 32px;
+            padding-top: 2px;
+        }
+    </style>
+</head>
 <body>
 
- <!-- navbar -->
- <nav>
-  <div class="logo">
-      <a href="#"><img src="./Images/Logo.png" alt="logo"></a>
-  </div>
-  <div class="nav-items">
-    <i class="fa-solid fa-bars"></i>
-      <ul class="menu">
-          <li class="item-1"><a href="./index.html">Home</a></li>
-          <li class="item-2"><a href="./index.html#about">About</a></li>
-          <li class="item-3"><a href="./index.html#tutors">Faculties</a></li>
-          <li class="item-4"><a href="./gallery.html">Gallery</a></li>
-          <li class="item-4"><a href="https://wa.me/+918113064544">Contact us</a></li>
-      </ul>
-  </div>
-</nav>
+    <div class="container">
+        <div class="header">
+            <h1>School gallery</h1>
+            <p>"Glimpses of Beauty: Dive into Our Gallery"</p>
+          </div>
 
-<!-- Header -->
-<div class="header">
-  <h1>School gallery</h1>
-  <p>"Glimpses of Beauty: Dive into Our Gallery"</p>
-</div>
-
-<!-- Photo Grid -->
-<div class="row"> 
-  <div class="column">
-    <img src="https://plus.unsplash.com/premium_photo-1664392455446-1e636959468b?q=80&w=1490&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" style="width:100%">
-    <img src="https://plus.unsplash.com/premium_photo-1677013622212-2cd4260dee5c?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" style="width:100%">
-    <img src="https://plus.unsplash.com/premium_photo-1664006988924-16f386bcd40e?q=80&w=1373&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" style="width:100%">
-    <img src="https://plus.unsplash.com/premium_photo-1664006988924-16f386bcd40e?q=80&w=1373&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" style="width:100%">
-    <img src="https://plus.unsplash.com/premium_photo-1677013622212-2cd4260dee5c?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" style="width:100%">
-    <img src="https://plus.unsplash.com/premium_photo-1664392455446-1e636959468b?q=80&w=1490&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" style="width:100%">
-    <img src="https://plus.unsplash.com/premium_photo-1664392455446-1e636959468b?q=80&w=1490&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" style="width:100%">
-  </div>
-  <div class="column">
-    <img src="https://plus.unsplash.com/premium_photo-1677013622212-2cd4260dee5c?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" style="width:100%">
-    <img src="https://plus.unsplash.com/premium_photo-1664006988924-16f386bcd40e?q=80&w=1373&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" style="width:100%">
-    <img src="https://plus.unsplash.com/premium_photo-1677013622212-2cd4260dee5c?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" style="width:100%">
-    <img src="https://plus.unsplash.com/premium_photo-1664392455446-1e636959468b?q=80&w=1490&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" style="width:100%">
-  </div>  
-  <div class="column">
-    <img src="https://plus.unsplash.com/premium_photo-1664006988924-16f386bcd40e?q=80&w=1373&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" style="width:100%">
-    <img src="https://plus.unsplash.com/premium_photo-1677013622212-2cd4260dee5c?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" style="width:100%">
-    <img src="https://plus.unsplash.com/premium_photo-1664006988924-16f386bcd40e?q=80&w=1373&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" style="width:100%">
-    <img src="https://plus.unsplash.com/premium_photo-1677013622212-2cd4260dee5c?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" style="width:100%">
-    <img src="https://plus.unsplash.com/premium_photo-1664392455446-1e636959468b?q=80&w=1490&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" style="width:100%">
-    <img src="https://plus.unsplash.com/premium_photo-1664392455446-1e636959468b?q=80&w=1490&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" style="width:100%">
-    <img src="https://plus.unsplash.com/premium_photo-1664392455446-1e636959468b?q=80&w=1490&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" style="width:100%">
-  </div>
-  <div class="column">
-    <img src="https://plus.unsplash.com/premium_photo-1677013622212-2cd4260dee5c?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" style="width:100%">
-    <img src="https://plus.unsplash.com/premium_photo-1664006988924-16f386bcd40e?q=80&w=1373&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" style="width:100%">
-    <img src="https://plus.unsplash.com/premium_photo-1677013622212-2cd4260dee5c?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" style="width:100%">
-    <img src="https://plus.unsplash.com/premium_photo-1664392455446-1e636959468b?q=80&w=1490&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" style="width:100%">
-  </div>
-</div>
+        
+        <div class="img-grid">
+            <img src="https://via.placeholder.com/600" alt="Image 1">
+            <img src="https://via.placeholder.com/600" alt="Image 2">
+            <img src="https://via.placeholder.com/600" alt="Image 3">
+            <img src="https://via.placeholder.com/600" alt="Image 4">
+            <img src="https://via.placeholder.com/600" alt="Image 5">
+            <img src="https://via.placeholder.com/600" alt="Image 6">
+            <!-- Add more images as needed -->
+        </div>
+    </div>
 
 </body>
 </html>
