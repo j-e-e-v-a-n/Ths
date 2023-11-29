@@ -30,7 +30,9 @@
         .img-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 20px;
+                grid-auto-rows: auto;
+                row-gap: 100px;
+                column-gap: 20px;
         }
 
         .img-grid img {
@@ -55,6 +57,13 @@
             padding: 32px;
             padding-top: 2px;
         }
+        .text {
+            padding: 5px;
+            text-align: center;
+            color: #555;
+            background-color: #fff;
+            border-radius: 0 0 8px 8px;
+        }
     </style>
 </head>
 <body>
@@ -67,13 +76,96 @@
 
         
         <div class="img-grid">
+            <div>
             <img src="./gallery/bord.jpg" alt="Image 1">
-            <img src="./gallery/school.jpg" alt="Image 2">
-            <img src="./gallery/ground.jpg" alt="Image 3">
-            <img src="./gallery/itlab.jpg" alt="Image 4">
-            <img src="./gallery/antidrugday1.jpg" alt="Image 5">
-            <img src="./gallery/antidrugday2.jpg" alt="Image 6">
-            <img src="./gallery/assembly.jpg" alt="Image 7">
+            <div class="text">
+                <p>This is some optional text describing Photo 1.</p>
+            </div>
+        </div>
+        <div>
+            <img src="./gallery/ground.jpg" alt="Image 1">
+            <div class="text">
+                <p>Sports Practice</p>
+            </div>
+        </div>
+        <div>
+            <img src="./gallery/schooltour10.jpg" alt="Image 1">
+            <div class="text">
+                <p>Class 10 tour</p>
+            </div>
+        </div>
+        <div>
+            <img src="./gallery/techfest.jpg" alt="Image 1">
+            <div class="text">
+                <p>2023 TechFest participants</p>
+            </div>
+        </div>
+        <div>
+            <img src="./gallery/election.jpg" alt="Image 1">
+            <div class="text">
+                <p>School Election</p>
+            </div>
+        </div>
+        <div>
+            <img src="./gallery/entrancefestival.jpg" alt="Image 1">
+            <div class="text">
+                <p>School Entrance Festival</p>
+            </div>
+        </div>
+        <div>
+            <img src="./gallery/environmentalday.jpg" alt="Image 1">
+            <div class="text">
+                <p>World Environmental Day</p>
+            </div>
+        </div>
+        <div>
+            <img src="./gallery/onamcle.jpg" alt="Image 1">
+            <div class="text">
+                <p>Onam Celebration</p>
+            </div>
+        </div>
+        <div>
+            <img src="./gallery/quiz.jpg" alt="Image 1">
+            <div class="text">
+                <p>Kerala State Youth Welfare Board, Science Quiz, First Prize Winner</p>
+            </div>
+        </div>
+        <div>
+            <img src="./gallery/regionalvisit.jpg" alt="Image 1">
+            <div class="text">
+                <p>Regional Visit</p>
+            </div>
+        </div>
+        <div>
+            <img src="./gallery/ribquizwinners.jpg" alt="Image 1">
+            <div class="text">
+                <p>RIB Quiz Winners</p>
+            </div>
+        </div>
+        <div>
+            <img src="./gallery/artsfest.jpg" alt="Image 1">
+            <div class="text">
+                <p>Arts Fest</p>
+            </div>
+        </div>
+        <div>
+            <img src="./gallery/itlab.jpg" alt="Image 1">
+            <div class="text">
+                <p>Little Kites Project</p>
+            </div>
+        </div>
+        <div>
+            <img src="./gallery/vegetable.jpg" alt="Image 1">
+            <div class="text">
+                <p>School Vegetable Garden</p>
+            </div>
+        </div>
+        <div>
+            <img src="./gallery/phcclass.jpg" alt="Image 1">
+            <div class="text">
+                <p>PHC First Aid Class</p>
+            </div>
+        </div>
             <!-- Add more images as needed -->
         </div>
     </div>
