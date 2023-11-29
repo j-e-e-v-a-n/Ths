@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function () {
             title: 'UPCOMING :  <br> SPORTS DAY ',
             date: 'November 30, 2023',
             location: 'VARAPETTY MINI STADIUM',
-            description: 'Visit ini stadium and learn about our programs.'
+            description: 'Visit Mini stadium and learn about our programs.'
         },
        
         // Add more events as needed
