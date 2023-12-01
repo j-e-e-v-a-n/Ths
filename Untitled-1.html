@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        h1 {
+            text-align: center;
+            padding: 20px 0;
+            color: #333;
+        }
+
+        .gallery {
+            display: flex;
+            flex-direction: column; /* Display images in a single column */
+            align-items: center; /* Center the images horizontally */
+        }
+
+        .gallery-item {
+            margin: 10px;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Image Gallery</h1>
+
+    <div class="gallery">
+        <div class="gallery-item">
+            <img src="./gallery/bord.jpg" alt="Image 1">
+        </div>
+        <div class="gallery-item">
+            <img src="./gallery/parade.jpg" alt="Image 1">
+        </div>
+        <div class="gallery-item">
+            <img src="./gallery/100mgirls.jpg" alt="Image 1">
+        </div>
+        <div class="gallery-item">
+            <img src="./gallery/race1.jpg" alt="Image 1">
+        </div>
+        <div class="gallery-item">
+            <img src="./gallery/race2.jpg" alt="Image 1">
+        </div>
+        <div class="gallery-item">
+            <img src="./gallery/football.jpg" alt="Image 1">
+        </div>
+        <div class="gallery-item">
+            <img src="./gallery/ground.jpg" alt="Image 1">
+        </div> 
+        <div class="gallery-item">
+            <img src="./gallery/schooltour10.jpg" alt="Image 1">
+        </div>
+        <div class="gallery-item">
+            <img src="./gallery/techfest.jpg" alt="Image 1">
+        </div>
+        <div class="gallery-item">
+            <img src="./gallery/election.jpg" alt="Image 1">
+        </div>
+        <div class="gallery-item">
+            <img src="./gallery/entrancefestival.jpg" alt="Image 1">
+        </div>
+        <div class="gallery-item">
+            <img src="./gallery/environmentalday.jpg" alt="Image 1">
+        </div>
+        <div class="gallery-item">
+            <img src="./gallery/onamcle.jpg" alt="Image 1">
+        </div>
+        <div class="gallery-item">
+            <img src="./gallery/regionalvisit.jpg" alt="Image 1">
+        </div>
+        <div class="gallery-item">
+            <img src="./gallery/itlab.jpg" alt="Image 1">
+        </div>
+        <div class="gallery-item">
+            <img src="./gallery/vegetable.jpg" alt="Image 1">
+        </div>
+        <div class="gallery-item">
+            <img src="./gallery/phcclass.jpg" alt="Image 1">
+        </div>
+        <div class="gallery-item">
+            <img src="./gallery/led.jpg" alt="Image 1">
+        </div>
+        <!-- Add more gallery items as needed -->
+    </div>
+
+</body>
+</html>
