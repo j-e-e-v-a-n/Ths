@@ -27,10 +27,10 @@ document.addEventListener('DOMContentLoaded', function () {
     const eventsData = [
         {
             
-            title: 'UPCOMING :  <br> SPORTS DAY ',
-            date: 'November 30, 2023',
-            location: 'Varappetty Mini Stadium',
-            description: 'Visit Mini stadium and learn about our programs.'
+            title: 'UPCOMING :  <br> ANNIVERSARY ',
+            date: 'February 2, 2024',
+            location: 'School auditorium',
+            description: 'Visit our school and enjoy the programs.'
         },
        
         // Add more events as needed
