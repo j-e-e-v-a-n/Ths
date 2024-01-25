@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function () {
         {
             
             title: 'UPCOMING :  <br> ANNIVERSARY ',
-            date: 'February 2, 2024',
+            date: 'February 1, 2024',
             location: 'School auditorium',
             description: 'Visit our school and enjoy the programs.'
         },
