@@ -747,57 +747,6 @@ ul{
     from {opacity: 0;}
     to {opacity:1 ;}
   }
-
- /* Styling for the container div */
- .container-gallery {
-    max-width: 600px;
-    margin: 20px auto;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    text-align: center;
-}
-
-/* Styling for the heading */
-.container-gallery h2 {
-    color: #333;
-    font-size: 24px;
-    margin-bottom: 15px;
-}
-
-/* Styling for the image */
-.container-gallery img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin-bottom: 15px;
-}
-
-/* Styling for the "View More" button */
-.view-more-btn-gallery {
-    background-color: #4CAF50;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-/* Hover effect for the button */
-.view-more-btn-gallery:hover {
-    background-color: #45a049;
-}
-@media (max-width: 600px) {
-    .container-gallery {
-        padding: 10px;
-    }
-
-    .container-gallery h2 {
-        font-size: 20px;
-    }
-}
-
       /* Add a class to style the hover effect */
       .popup:hover .popuptext {
         visibility: visible;
@@ -811,5 +760,57 @@ ul{
         border-radius: 6px; /* Optional: add border-radius to the image */
       }
 
+      .view-more-btn {
+        background-color: #4CAF50;
+        color: #fff;
+        padding: 10px 20px;
+        text-align: center;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        max-width: fit-content;
+        cursor: pointer;
+        margin: auto;
+        
+    }
+    .gallery-item h2 {
+        color: #000000;
+        text-align: center;
+        font-size: 24px;
+        font-family: sans-serif;
+        margin-bottom: 20px;
+        font-size: 50px;
+    }
+    /* Hover effect for the button */
+    .view-more-btn:hover {
+        background-color: #45a049;
+    }
+    .gallery-item {
+        margin: 10px;
+        overflow: hidden;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
 
+    .gallery-item img {
+        width: 100%;
+        object-fit: cover;
+        height: 506px;
+        border-radius: 8px;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .gallery-item:hover img {
+        transform: scale(1.1);
+    }
+    .gallery {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        align-content: center;
+        object-fit: contain;
+        width: auto;
+        }
 
