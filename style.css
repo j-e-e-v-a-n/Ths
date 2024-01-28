@@ -747,6 +747,49 @@ ul{
     from {opacity: 0;}
     to {opacity:1 ;}
   }
+
+ /* Styling for the container div */
+ .container-gallery {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* Styling for the heading */
+.container-gallery h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+/* Styling for the image */
+.container-gallery img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+/* Styling for the "View More" button */
+.view-more-btn-gallery {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Hover effect for the button */
+.view-more-btn-gallery:hover {
+    background-color: #45a049;
+}
+
+
       /* Add a class to style the hover effect */
       .popup:hover .popuptext {
         visibility: visible;
