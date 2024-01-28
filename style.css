@@ -788,7 +788,15 @@ ul{
 .view-more-btn-gallery:hover {
     background-color: #45a049;
 }
+@media (max-width: 600px) {
+    .container-gallery {
+        padding: 10px;
+    }
 
+    .container-gallery h2 {
+        font-size: 20px;
+    }
+}
 
       /* Add a class to style the hover effect */
       .popup:hover .popuptext {
