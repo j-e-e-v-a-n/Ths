@@ -331,8 +331,8 @@ nav{
 
 .card-msg p{
     margin: 25px auto;
-    line-height: 24px;
-    font-weight: 200;
+    line-height: 27px;
+    font-weight: 400;
     color: var(--primary-text-color);
 
 }
