@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Player</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+            font-family: 'Arial', sans-serif;
+            font-size: 18px;
+        }
+
+        #video-container {
+            position: relative;
+        }
+
+        #end-message {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: none;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        #video {
+            width: 100%;
+            max-width: 800px;
+            border-radius: 10px;
+        }
+
+        #reload-button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        #reload-button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<div id="video-container">
+    <video id="video" controls>
+        <source src="./gallery/lv_0_20240131152908.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div id="end-message">
+        <p>Video has ended!</p>
+        <button id="reload-button" onclick="redirectToComingSoon()">Go to Coming Soon</button>
+    </div>
+</div>
+
+<script>
+    const video = document.getElementById('video');
+    const endMessage = document.getElementById('end-message');
+
+    video.addEventListener('ended', redirectToComingSoon);
+
+    function redirectToComingSoon() {
+        window.location.href = './hi.html'; // Replace with the URL of your "Coming Soon" page
+    }
+</script>
+
+</body>
+</html>
