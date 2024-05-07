@@ -855,6 +855,7 @@ ul{
         .button-container {
             text-align: center;
             margin-top: 20px;
+            padding-left: 33px;
         }
         
         .website-button, .app-button {
