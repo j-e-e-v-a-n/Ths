@@ -772,6 +772,7 @@ ul{
             max-width: 600px;
             margin: 20px auto;
             padding: 20px;
+            text-align: center;
             border: 1px solid #ddd;
             border-radius: 8px;
             text-align: center;
@@ -788,6 +789,7 @@ ul{
         .hi img {
             max-width: 100%;
             height: auto;
+            text-align: center;
             border-radius: 8px;
             margin-bottom: 15px;
         }
@@ -795,6 +797,7 @@ ul{
         flex-shrink: 0;
         width: 100%;
         max-width: 100%;
+        text-align: center;
         padding-right: calc(var(--bs-gutter-x)* .0);
         padding-left: calc(var(--bs-gutter-x)* .5);
         margin-top: var(--bs-gutter-y);
@@ -819,6 +822,7 @@ ul{
         @media (max-width: 600px) {
             .hi {
                 padding: 10px;
+                text-align: center;
             }
 
             .hi h2 {
