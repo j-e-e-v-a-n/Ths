@@ -367,6 +367,9 @@ nav{
 }
 
 .tutor-cards .card img{
+    justify-content: center;
+    height: 405.5;
+    width: 228;
     border-radius: 8px;
 }
 
