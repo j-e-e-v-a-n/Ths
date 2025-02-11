@@ -23,6 +23,7 @@ body{
     overflow-x: hidden;
     background-color: #ffffff;
 }
+
 p {
     font-size: 1rem;
    }
@@ -196,6 +197,76 @@ nav{
     color: var(--secondary-text-color);
     transition: all ease 400ms;
     
+}
+.result {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Styling for the links */
+.result a {
+    outline: 1px solid var(--border-color);
+    padding: 10px 24px;
+    border-radius: 5px;
+    color: var(--primary-text-color);
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    transition: all 0.3s ease-in-out; /* Smooth hover effect */
+}
+
+/* Margin adjustments for buttons */
+.result-button a {
+    margin: 10px; /* Uniform margin for better spacing */
+}
+
+/* Hover effect */
+.result a:hover {
+    color: white;
+}
+
+/* SVG icon adjustments */
+.result-button svg {
+    width: 20px;  /* Adjust the width */
+    height: 20px; /* Adjust the height */
+    vertical-align: middle; /* Align the SVG with text */
+    margin-right: 5px; /* Space between icon and text */
+    fill: currentColor; /* Inherit text color */
+}
+
+/* Background transition for hover */
+.result a::before {
+    content: '';
+    background-color: #212529;
+    position: absolute; 
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 0;
+    z-index: -1;
+    transition: all 0.3s ease-in-out; /* Smooth background transition */
+}
+
+.result a:hover::before {
+    height: 100%; /* Full background on hover */
+}
+
+/* Responsive Layout */
+
+/* For mobile devices - stack vertically */
+@media (max-width: 768px) {
+    .result-button {
+        display: block; /* Stack buttons vertically */
+        margin: 10px auto; /* Center buttons */
+    }
+}
+
+/* For desktop devices - align side by side */
+@media (min-width: 769px) {
+    .result-button {
+        display: inline-block; /* Align side by side */
+        margin-right: 20px; /* Space between buttons */
+    }
 }
 
 /* upcomming events */
@@ -479,6 +550,7 @@ nav{
     display: inline-block;
 }
     .prospectus-button a{
+    margin-right: 30px;
     margin: 20px 10px;
     
     }
@@ -840,15 +912,139 @@ ul{
                 font-size: 20px;
             }
         }
+        
+        /* General Reset */
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+/* Contact Form */
+.contact_us_2 {
+  display: flex;
+  justify-content: center;
+  padding: 50px 20px;
+}
 
+.container-contact {
+  max-width: 800px;
+  width: 100%;
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
 
+/* Headings */
+.contactus-head {
+  font-size: 32px;
+  margin-bottom: 15px;
+  font-weight: 700;
+  color: #333;
+}
 
+.contactus-subhead {
+  font-size: 16px;
+  color: #777;
+  margin-bottom: 30px;
+}
 
+/* Form Fields */
+.form-fields .field {
+  margin-bottom: 20px;
+  text-align: left;
+}
 
+.form-fields label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #777;
+  margin-bottom: 5px;
+  display: block;
+}
 
+.form-fields input,
+.form-fields textarea {
+  width: 100%;
+  padding: 12px;
+  font-size: 14px;
+  border: 2px solid #eee;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+  color: #333;
+  margin-top: 5px;
+}
 
+.form-fields input:focus,
+.form-fields textarea:focus {
+  border-color: #03a9f4;
+  outline: none;
+}
 
+/* Submit Button */
+.submit-btn {
+  width: 100%;
+  padding: 15px;
+  background-color: #03a9f4;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
 
+.submit-btn:hover {
+  background-color: #0288d1;
+}
+
+/* Social Media Links */
+.social-media-links {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.social-link {
+  margin: 0 10px;
+}
+
+.social-link img {
+  width: 30px;
+  height: 30px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contactus-head {
+    font-size: 28px;
+  }
+
+  .form-fields label {
+    font-size: 12px;
+  }
+
+  .form-fields input,
+  .form-fields textarea {
+    font-size: 14px;
+  }
+
+  .submit-btn {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 500px) {
+  .container {
+    padding: 30px;
+  }
+
+  .submit-btn {
+    font-size: 14px;
+  }
+}
 
         .intro {
             border: 1px solid #f8c0c0;

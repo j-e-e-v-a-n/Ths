@@ -97,4 +97,34 @@ var x = setInterval(function() {
 }, 1000);
 
 
+
+document.getElementById('contactForm').addEventListener('submit', function (event) {
+  event.preventDefault(); // Stop the form from redirecting
+
+  // Collect form data
+  const firstName = document.getElementById('FirstName').value;
+  const lastName = document.getElementById('LastName').value;
+  const email = document.getElementById('Email').value;
+  const phoneNumber = document.getElementById('PhoneNumber').value;
+  const message = document.getElementById('Message').value;
+
+  // Set the values of the hidden inputs
+  document.querySelector('input[name="entry.566466427"]').value = firstName;
+  document.querySelector('input[name="entry.1904256212"]').value = lastName;
+  document.querySelector('input[name="entry.360813075"]').value = email;
+  document.querySelector('input[name="entry.959535505"]').value = phoneNumber;
+  document.querySelector('input[name="entry.1842983877"]').value = message;
+
+  // Change the button text to "Message Sent"
+  const submitBtn = document.getElementById('submitBtn');
+  submitBtn.textContent = 'Message Sent';
+  submitBtn.classList.add('disabled-btn');
+  submitBtn.disabled = true;
+
+  // Submit the hidden form (Google Form)
+  document.getElementById('google-form').submit();
+
+});
+
+
 AOS.init();
