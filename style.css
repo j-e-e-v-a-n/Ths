@@ -478,7 +478,7 @@ nav{
     position: relative;
     display: inline-block;
 }
-    .ppp a{
+    .prospectus-button a{
     margin: 20px 10px;
     
     }
@@ -486,6 +486,14 @@ nav{
   .prospectus a:hover{
    color: white;
   }
+  .prospectus-button svg {
+    width: 20px;  /* Adjust the width */
+    height: 20px; /* Adjust the height */
+    vertical-align: middle; /* Align the SVG with text */
+    margin-right: 5px; /* Add spacing between the icon and text */
+    fill: currentColor; /* Inherit text color */
+  }
+  
 
  .prospectus a::before {
     content: '';
