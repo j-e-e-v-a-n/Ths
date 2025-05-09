@@ -268,6 +268,149 @@ nav{
         margin-right: 20px; /* Space between buttons */
     }
 }
+/* Minimal THSLC Results Section Styles */
+.intro#result {
+    background-color: #fff;
+    border-radius: 16px;
+    padding: 30px;
+    color: #333;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    max-width: 700px;
+    margin: 30px auto;
+    text-align: center;
+    position: relative;
+    border-left: 4px solid #8e44ad;
+  }
+  
+  .intro#result p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    color: #555;
+  }
+  
+  .intro#result p:first-child {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #8e44ad;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+  
+  .intro#result p:first-child::before {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #27ae60;
+    border-radius: 50%;
+    animation: pulse 2s infinite;
+  }
+  
+  #demo {
+    font-size: 2.8rem;
+    font-weight: 800;
+    background: linear-gradient(to right, #8e44ad, #2980b9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    display: inline-block;
+    margin: 15px 0;
+    padding: 5px;
+    position: relative;
+  }
+  
+  #demo::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(236, 240, 241, 0.5);
+    border-radius: 12px;
+    z-index: -1;
+    transform: scale(1.05);
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 25px;
+  }
+  
+  .website-button, .app-button {
+    padding: 12px 20px;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    min-width: 160px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .website-button {
+    background-color: #fff;
+    color: #8e44ad;
+    border: 2px solid #8e44ad;
+  }
+  
+  .website-button:hover {
+    background-color: #8e44ad;
+    color: #fff;
+  }
+  
+  .app-button {
+    background: linear-gradient(45deg, #8e44ad, #2980b9);
+    color: white;
+    border: none;
+    box-shadow: 0 4px 12px rgba(41, 128, 185, 0.2);
+  }
+  
+  .app-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(41, 128, 185, 0.3);
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(0.95);
+      box-shadow: 0 0 0 0 rgba(39, 174, 96, 0.7);
+    }
+    
+    70% {
+      transform: scale(1);
+      box-shadow: 0 0 0 8px rgba(39, 174, 96, 0);
+    }
+    
+    100% {
+      transform: scale(0.95);
+      box-shadow: 0 0 0 0 rgba(39, 174, 96, 0);
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .intro#result {
+      padding: 20px 15px;
+      border-radius: 12px;
+    }
+    
+    #demo {
+      font-size: 2.2rem;
+    }
+    
+    .button-container {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .website-button, .app-button {
+      width: 100%;
+      max-width: 220px;
+    }
+  }
 
 /* upcomming events */
 
