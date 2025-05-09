@@ -68,33 +68,81 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   // Set the date we're counting down ton
-var countDownDate = new Date("May 9, 2025 15:00:00").getTime();
-
-// Update the count down every 1 second
-var x = setInterval(function() {
-
-  // Get today's date and time
-  var now = new Date().getTime();
+  const releaseDate = new Date("May 9, 2025 10:00:00").getTime();
     
-  // Find the distance between now and the count down date
-  var distance = countDownDate - now;
+  // Elements
+  const statusText = document.getElementById("status-text");
+  const demoElement = document.getElementById("demo");
+  const descriptionElement = document.getElementById("description");
+  const primaryButton = document.getElementById("primary-button");
+  const secondaryButton = document.getElementById("secondary-button");
+  const secondaryLink = document.getElementById("secondary-link");
+  
+  // Update the countdown every second
+  const countdownTimer = setInterval(function() {
+    // Get current date and time
+    const now = new Date().getTime();
     
-  // Time calculations for days, hours, minutes and seconds
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    // Find the time remaining
+    const timeRemaining = releaseDate - now;
     
-  // Output the result in an element with id="demo"
-  document.getElementById("demo").innerHTML =   hours + "h "
-  + minutes + "m " + seconds + "s ";
+    // Time calculations for days, hours, minutes and seconds
+    const days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
     
-  // If the count down is over, write some text 
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("demo").innerHTML = "⚠ RESULT HAS BEEN PUBLISHED ⚠";
+    // Display the result - if countdown finished, show results available message
+    if (timeRemaining < 0) {
+      clearInterval(countdownTimer);
+      showResultsAvailable();
+    } else {
+      showCountdown(days, hours, minutes, seconds);
+    }
+  }, 1000);
+  
+  // Function to show countdown
+  function showCountdown(days, hours, minutes, seconds) {
+    statusText.textContent = "THSLC Results will be available in";
+    
+    // Format the countdown display
+    let countdownText = "";
+    if (days > 0) countdownText += `${days}d `;
+    countdownText += `${hours}h ${minutes}m ${seconds}s`;
+    demoElement.textContent = countdownText;
+    
+    descriptionElement.textContent = "Results will be published on this site:";
+    primaryButton.textContent = "Check Status";
+    secondaryButton.textContent = "Reminder Alert";
   }
-}, 1000);
+  
+  // Function to show results available
+  function showResultsAvailable() {
+    statusText.textContent = "THSLC Results Now Available!";
+    
+    const today = new Date();
+    const options = { year: 'numeric', month: 'long', day: 'numeric' };
+    demoElement.textContent = today.toLocaleDateString('en-US', options);
+    
+    descriptionElement.textContent = "The Technical High School Leaving Certificate results have been published. You can access them through the link below:";
+    primaryButton.textContent = "View Results";
+    secondaryButton.textContent = "Download Certificate";
+  }
+  
+  // Check if results should be available on initial load
+  if (new Date().getTime() > releaseDate) {
+    showResultsAvailable();
+  } else {
+    // Trigger the countdown immediately
+    const now = new Date().getTime();
+    const timeRemaining = releaseDate - now;
+    const days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
+    
+    showCountdown(days, hours, minutes, seconds);
+  }
 
 
 
