@@ -1,88 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-EW30YRQ1G6"></script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GTHS Varappetty</title>
-    <link rel="icon" href="./Images/Logo.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;600&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-            <!-- font-awesome -->
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-   
-   <!-- swiper style -->
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EW30YRQ1G6"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GTHS Varappetty</title>
+  <link rel="icon" href="./Images/Logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;600&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- font-awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+  <!-- swiper style -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
 
-    <!-- navbar -->
-        <nav>
-            <div class="logo" data-aos="fade-right">
-                <a href="#"><img src="./Images/Logo.png" alt="logo"></a>
-            </div>
-            <div class="nav-items">
-              <i class="fa-solid fa-bars"></i>
-                <ul class="menu">
-                    <li class="item-1"><a href="#">Home</a></li>
-                    <li class="item-2"><a href="#about">About</a></li>
-                    <li class="item-3"><a href="#tutors">Faculties</a></li>
-                    <li class="item-4"><a href="./gallery.html">Gallery</a></li>
-                    <li class="item-4"><a href="https://wa.me/+919447705609">Contact us</a></li>
-                </ul>
-            </div>
-        </nav>
-   <!-- main -->
+  <!-- navbar -->
+  <header class="site-header">
+    <nav>
+      <div class="logo" data-aos="fade-right">
+        <a href="#"><img src="./Images/Logo.png" alt="logo"></a>
+      </div>
+      <div class="nav-items">
+        <i class="fa-solid fa-bars"></i>
+        <ul class="menu">
+          <li class="item-1"><a href="#">Home</a></li>
+          <li class="item-2"><a href="#about">About</a></li>
+          <li class="item-3"><a href="#tutors">Faculties</a></li>
+          <li class="item-4"><a href="./gallery.html">Gallery</a></li>
+          <li class="item-4"><a href="https://wa.me/+919447705609">Contact us</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- main -->
 
-   <main>
-    <div class="hero">   
+    <main>
+      <section class="hero">
         <div class="hero-img">
-
-            <!--  upcomming events  -->
-
-          <div class="main-container col-sm-3 col-lg-5 ">
-                
-                <div class="events-container" id="events-container" data-aos="fade-up-left">
-                    <h1 class="hhz"></h1>   
-                    <!-- Events will be dynamically added here using JavaScript -->
-                </div> 
-            
-        </div>
-        <div class="hero-info">
-            
-            <h1  data-aos="fade-up-right">Technical Mastery, Endless Possibilities.</h1>
-            <h4>Technology and Education Converge for <br>Limitless Futures.</h4>
-            <a href="#about" class="cta-btn">Explore more</a>
-           
+          <div class="hero-content container">
+            <div class="hero-info" data-aos="fade-up-right">
+              <p class="eyebrow">Govt. Technical High School Varappetty</p>
+              <h1>Technical Mastery, Endless Possibilities.</h1>
+              <p class="subtitle">Technology and education converge for limitless futures.</p>
+              <div class="cta-group">
+                <a href="#about" class="cta-btn">Explore more</a>
+                <a href="./gallery.html" class="ghost-btn">View gallery</a>
+              </div>
             </div>
+            <div class="main-container col-sm-3 col-lg-5 ">
+              <div class="events-head">
+                <p class="eyebrow">Happening soon</p>
+                <h3>Upcoming events</h3>
+              </div>
+              <div class="events-container" id="events-container" data-aos="fade-up-left">
+                <!-- Events will be dynamically added here using JavaScript -->
+              </div>
+            </div>
+          </div>
         </div>
+      </section>
 
-        
-    </div>
-    
-   </main>
-   <div class="result">
+    </main>
+  </header>
+  <div class="result">
     <span class="result-button">
       <a href="results.html">Results</a>
     </span>
     <span class="result-button">
       <a href="https://forms.gle/kUFGhmAhELbxb7r39">
-        <svg aria-hidden="true" class="e-font-icon-svg e-fas-link" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
-          <path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"></path>
+        <svg aria-hidden="true" class="e-font-icon-svg e-fas-link" viewBox="0 0 512 512"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z">
+          </path>
         </svg>
         Alumni Registration
       </a>
     </span>
-  </div>
-  </div>
-  </div>
   </div>
   <div class="intro" id="result">
     <!-- Content will be dynamically updated by JavaScript -->
@@ -93,509 +98,537 @@
       <a href="https://thslcexam.kerala.gov.in/thslc/index.php" target="_blank" class="website-link">
         <button id="primary-button" class="website-button">Check Status</button>
       </a>
+      <button id="secondary-button" class="app-button">Reminder Alert</button>
     </div>
   </div>
 
 
-<section class="vision col-sm-12 col-lg-3" id="vision" data-aos="fade-down-right">
-  <h2 class="text-center"><strong>Our vision</strong></h2><div class="text-center">
-  <p class="lead"><strong>To be the premier technical high school where innovation flourishes, curiosity thrives, and students are equipped with cutting-edge skills, preparing them to lead confidently in the dynamic landscape of technology and engineering, shaping a future of limitless possibilities.</strong></p>
-</div>
-</section>
-   <!-- about -->
-   <section class="about container" id="about" data-aos="fade-down">
+  <section class="vision col-sm-12 col-lg-3" id="vision" data-aos="fade-down-right">
+    <h2 class="text-center"><strong>Our vision</strong></h2>
+    <div class="text-center">
+      <p class="lead"><strong>To be the premier technical high school where innovation flourishes, curiosity thrives,
+          and students are equipped with cutting-edge skills, preparing them to lead confidently in the dynamic
+          landscape of technology and engineering, shaping a future of limitless possibilities.</strong></p>
+    </div>
+  </section>
+  <!-- about -->
+  <section class="about container" id="about" data-aos="fade-down">
+    <p class="eyebrow text-center">Who we are</p>
     <h2 class="text-center">About us</h2>
-    <p class="text-center">Technical high school Varappetty is under the Technical Education Department was inaugurated in 1985 by the Honorable Education Minister Mr. T M Jacob.
-	    This school is located in varapetty Panchayat of Kothamangalam Taluk.
-	    It first started functioning in the rented premises of Inchoor Marthoma Syrian Jacobite Church. Since June 
-	    2016, This institution has been functioning in a new building constructed at Inchoor Ambalampadi. From 2016-2017, 45 
-	    students are selected for 8th class on the basis of entrance examination. Both boys and girls are admitted here.
-	    Various engineering subjects are included in the curriculum with emphasis on technical education.</p>
-   </section>
+    <p class="text-center">Technical high school Varappetty is under the Technical Education Department was inaugurated
+      in 1985 by the Honorable Education Minister Mr. T M Jacob.
+      This school is located in varapetty Panchayat of Kothamangalam Taluk.
+      It first started functioning in the rented premises of Inchoor Marthoma Syrian Jacobite Church. Since June
+      2016, This institution has been functioning in a new building constructed at Inchoor Ambalampadi. From 2016-2017,
+      45
+      students are selected for 8th class on the basis of entrance examination. Both boys and girls are admitted here.
+      Various engineering subjects are included in the curriculum with emphasis on technical education.</p>
+  </section>
 
-   <!-- message card -->
-   <p class="display-5 text-center" data-aos="zoom-in-up">Message</p>
-   <section class="container msg-card">
-    
+  <!-- message card -->
+  <p class="display-5 text-center section-heading" data-aos="zoom-in-up">Message</p>
+  <section class="container msg-card">
+
     <div class="card-image col-sm-12 col-lg-3" data-aos="zoom-in-up">
-        <img src="./Images/Superintendent.png" alt="">
-        <h2>Asaf Ali M.A</h2>
+      <img src="./Images/Superintendent.png" alt="">
+      <h2>Asaf Ali M.A</h2>
     </div>
     <div class="card-msg" data-aos="zoom-in-up">
-        <p class="col-sm-12 col-lg-12">The basic aim of education must lie in equipping the building
-		blocks with the life skills to face the real world.We strive to endow the students with
-		a platform helping them to broaden their horizon and in the process provide them healthy,
-		refined, holistic and substantial education. We arm our students with technological supremacy 
-		and help them integrate it with values as we firmly believe that every child has potential to
-		achieve something significant. I strongly believe that education is a blend of academic excellence 
-		and creativity.So our moto is to encourage and empower our students to grow as strong, reflective
-		and humble individuals with discerning minds prepared to make a mark in all spheres of life.</p>
-           <h4 class="blockquote-footer">Superintendent</h4>
+      <p class="col-sm-12 col-lg-12">The basic aim of education must lie in equipping the building
+        blocks with the life skills to face the real world.We strive to endow the students with
+        a platform helping them to broaden their horizon and in the process provide them healthy,
+        refined, holistic and substantial education. We arm our students with technological supremacy
+        and help them integrate it with values as we firmly believe that every child has potential to
+        achieve something significant. I strongly believe that education is a blend of academic excellence
+        and creativity.So our moto is to encourage and empower our students to grow as strong, reflective
+        and humble individuals with discerning minds prepared to make a mark in all spheres of life.</p>
+      <h4 class="blockquote-footer">Superintendent</h4>
     </div>
-   </section>
+  </section>
 
-   <!-- tutor cards -->
-   <div class="tutor-cards row container" id="tutors" data-aos="flip-left">
+  <!-- tutor cards -->
+  <div class="tutor-cards row container" id="tutors" data-aos="flip-left">
     <h2 class="text-center">Meet our tutors!</h2>
-    
-    <div class="card col-sm-12 col-lg-3" style="width: 18rem;">
-        <img class="card-img-top" src="./toutors/babu.jpg" alt="Card image cap">
-        <div class="card-body">
-            <h5 class="card-title text-center">Babu K.C<span>Engineering Instructor</span></h5>
-        </div>
-    </div>
 
     <div class="card col-sm-12 col-lg-3" style="width: 18rem;">
-        <img class="card-img-top" src="https://img.freepik.com/premium-vector/available-allowed-icon-concept_313674-42037.jpg?w=740" alt="Card image cap">
-        <div class="card-body">
-            <h5 class="card-title text-center">NA<span>Foreman</span></h5>
-        </div>
-    </div>
-
-    <div class="card col-sm-12 col-lg-3" style="width: 18rem;">
-        <img class="card-img-top" src="https://img.freepik.com/premium-vector/available-allowed-icon-concept_313674-42037.jpg?w=740" alt="Card image cap">
-        <div class="card-body">
-            <h5 class="card-title text-center">NA<span>Electronics W.I</span></h5>
-        </div>
-    </div>
-
-    
-	<div class="card col-sm-12 col-lg-3" style="width: 18rem;">
-    <img class="card-img-top" src="./toutors/arun.jpg" alt="Card image cap">
-    <div class="card-body">
-        <h5 class="card-title text-center">Arun V.K<span>Fitting W.I</span></h5>
-    </div>
-    </div>
-
-    <div class="card col-sm-12 col-lg-3" style="width: 18rem;">
-      <img class="card-img-top" src="https://img.freepik.com/premium-vector/available-allowed-icon-concept_313674-42037.jpg?w=740" alt="Card image cap">
+      <img class="card-img-top" src="./toutors/babu.jpg" alt="Card image cap">
       <div class="card-body">
-          <h5 class="card-title text-center">NA<span>General Workshop W.I</span></h5>
+        <h5 class="card-title text-center">Babu K.C<span>Engineering Instructor</span></h5>
       </div>
-      </div>
+    </div>
 
     <div class="card col-sm-12 col-lg-3" style="width: 18rem;">
-        <img class="card-img-top" src="./toutors/betsy.jpg" alt="Card image cap">
-        <div class="card-body">
-            <h5 class="card-title text-center">Betsy Baby<span>Electrical W.I</span></h5>
-        </div>
-        </div>
+      <img class="card-img-top"
+        src="https://img.freepik.com/premium-vector/available-allowed-icon-concept_313674-42037.jpg?w=740"
+        alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title text-center">NA<span>Foreman</span></h5>
+      </div>
+    </div>
 
-	<div class="card col-sm-12 col-lg-3" style="width: 18rem;">
-        <img class="card-img-top" src="./toutors/muhyu.jpg" alt="Card image cap">
-        <div class="card-body">
-            <h5 class="card-title text-center">Muhayudheen kutty U.S<span>Draftsman</span></h5>
-        </div>
-        </div>
+    <div class="card col-sm-12 col-lg-3" style="width: 18rem;">
+      <img class="card-img-top"
+        src="https://img.freepik.com/premium-vector/available-allowed-icon-concept_313674-42037.jpg?w=740"
+        alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title text-center">NA<span>Electronics W.I</span></h5>
+      </div>
+    </div>
 
-        
-        <div class="card col-sm-12 col-lg-3" style="width: 18rem;">
-          <img class="card-img-top" src="./toutors/shabna.png" alt="Card image cap">
-          <div class="card-body">
-              <h5 class="card-title text-center">Shabna Asmi E.M<span>SITC</span></h5>
-          </div>
-          </div>
-	    
-	   <div class="card col-sm-12 col-lg-3" style="width: 18rem;">
-        <img class="card-img-top" src="./toutors/jaya.jpg" alt="Card image cap">
-        <div class="card-body">
-            <h5 class="card-title text-center">Jaya P<span>Class Teacher &#8553;</span></h5>
-        </div>
-        </div>
 
-        <div class="card col-sm-12 col-lg-3" style="width: 18rem;">
-          <img class="card-img-top" src="./toutors/neji.png" alt="Card image cap">
-          <div class="card-body">
-              <h5 class="card-title text-center">Negimol M.M<span>Class Teacher &#8552;</span></h5>
-          </div>
-          </div>
+    <div class="card col-sm-12 col-lg-3" style="width: 18rem;">
+      <img class="card-img-top" src="./toutors/arun.jpg" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title text-center">Arun V.K<span>Fitting W.I</span></h5>
+      </div>
+    </div>
 
-          <div class="card col-sm-12 col-lg-3" style="width: 18rem;">
-            <img class="card-img-top" src="./toutors/priya.jpg" alt="Card image cap">
-            <div class="card-body">
-                <h5 class="card-title text-center">Priya Narayanan<span>Class Teacher &#8551;</span></h5>
-            </div>
-            </div>
+    <div class="card col-sm-12 col-lg-3" style="width: 18rem;">
+      <img class="card-img-top"
+        src="https://img.freepik.com/premium-vector/available-allowed-icon-concept_313674-42037.jpg?w=740"
+        alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title text-center">NA<span>General Workshop W.I</span></h5>
+      </div>
+    </div>
 
-            <div class="card col-sm-12 col-lg-3" style="width: 18rem;">
-              <img class="card-img-top" src="https://img.freepik.com/premium-vector/available-allowed-icon-concept_313674-42037.jpg?w=740" alt="Card image cap">
-              <div class="card-body">
-                  <h5 class="card-title text-center">NA<span>Academic  section</span></h5>
-              </div>
-              </div>
+    <div class="card col-sm-12 col-lg-3" style="width: 18rem;">
+      <img class="card-img-top" src="./toutors/betsy.jpg" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title text-center">Betsy Baby<span>Electrical W.I</span></h5>
+      </div>
+    </div>
 
-              <!-- <div class="card col-sm-12 col-lg-3" style="width: 18rem;">
+    <div class="card col-sm-12 col-lg-3" style="width: 18rem;">
+      <img class="card-img-top" src="./toutors/muhyu.jpg" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title text-center">Muhayudheen kutty U.S<span>Draftsman</span></h5>
+      </div>
+    </div>
+
+
+    <div class="card col-sm-12 col-lg-3" style="width: 18rem;">
+      <img class="card-img-top" src="./toutors/shabna.png" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title text-center">Shabna Asmi E.M<span>SITC</span></h5>
+      </div>
+    </div>
+
+    <div class="card col-sm-12 col-lg-3" style="width: 18rem;">
+      <img class="card-img-top" src="./toutors/jaya.jpg" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title text-center">Jaya P<span>Class Teacher &#8553;</span></h5>
+      </div>
+    </div>
+
+    <div class="card col-sm-12 col-lg-3" style="width: 18rem;">
+      <img class="card-img-top" src="./toutors/neji.png" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title text-center">Negimol M.M<span>Class Teacher &#8552;</span></h5>
+      </div>
+    </div>
+
+    <div class="card col-sm-12 col-lg-3" style="width: 18rem;">
+      <img class="card-img-top" src="./toutors/priya.jpg" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title text-center">Priya Narayanan<span>Class Teacher &#8551;</span></h5>
+      </div>
+    </div>
+
+    <div class="card col-sm-12 col-lg-3" style="width: 18rem;">
+      <img class="card-img-top"
+        src="https://img.freepik.com/premium-vector/available-allowed-icon-concept_313674-42037.jpg?w=740"
+        alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title text-center">NA<span>Academic section</span></h5>
+      </div>
+    </div>
+
+    <!-- <div class="card col-sm-12 col-lg-3" style="width: 18rem;">
                 <img class="card-img-top" src="./toutors/dhivin.jpg" alt="Card image cap">
                 <div class="card-body">
                     <h5 class="card-title text-center">Dhivin Pratheesh<span>School Leader</span></h5>
                 </div>
                 </div> -->
-	   
-    </div>
-</div>
-<!-- facilities -->
-<section class="facilities" id="facilities">
-  <div class="container">
-      <div class="row">
-          <h2 class="text-center">Facilities</h2>
-          <div class="card  col-sm-12 col-lg-4"  data-aos="fade-up"
-          data-aos-anchor-placement="top-bottom"
-          data-aos-duration="1000">
-          <a href="./gallery.html#electronics_workshop"> <img class="card-img-top" src="./Images/circuit.png" alt="Card image cap"></a>
-              <div class="card-body">
-                <h3 class="card-text">Electronics</h3>
-              </div>
-            </div>
-  
-            <div class="card  col-sm-12 col-lg-4"  data-aos="fade-up"
-            data-aos-anchor-placement="top-bottom"
-            data-aos-duration="1000">
-            <a href="./gallery.html#fitting_workshop"> <img class="card-img-top" src="./Images/wrench.png" alt="Card image cap"></a>
-              <div class="card-body">
-                <h3 class="card-text">Fitting</h3>
-              </div>
-            </div>
-  
-            <div class="card col-sm-12 col-lg-4"   data-aos="fade-up"
-            data-aos-anchor-placement="top-bottom"
-            data-aos-duration="1000">
-            <a href="./gallery.html#electrical_workshop"> <img class="card-img-top" src="./Images/plug.png" alt="Card image cap"></a>
-              <div class="card-body">
-                <h3 class="card-text">Electrical</h3>
-              </div>
-            </div>
-  
-            <div class="card col-sm-12 col-lg-4"   data-aos="fade-up"
-            data-aos-anchor-placement="top-bottom"
-            data-aos-duration="1000">
-            <a href="./gallery.html"> <img class="card-img-top" src="./Images/ai.png" alt="Card image cap"></a>
-              <div class="card-body">
-                <h3 class="card-text">Robotics</h3>
-              </div>
-            </div>
-  
-            <div class="card col-sm-12 col-lg-4"   data-aos="fade-up"
-            data-aos-anchor-placement="top-bottom"
-            data-aos-duration="1000">
-            <a href="./gallery.html#it_lab"> <img class="card-img-top" src="./Images/computer.png" alt="Card image cap"></a>
-              <div class="card-body">
-                <h3 class="card-text">Computer Lab</h3>
-              </div>
-            </div>
-  
-            <div class="card col-sm-12 col-lg-4"   data-aos="fade-up"
-            data-aos-anchor-placement="top-bottom"
-            data-aos-duration="1000">
-            <a href="./gallery.html#Ground"> <img class="card-img-top" src="./Images/football-pitch.png" alt="Card image cap"></a>
-              <div class="card-body">
-                <h3 class="card-text">Sports & Games</h3>
-              </div>
-            </div>
-  
-            <div class="card col-sm-12 col-lg-4"   data-aos="fade-up"
-            data-aos-anchor-placement="top-bottom"
-            data-aos-duration="1000">
-              <img class="card-img-top" src="./Images/education.png" alt="Card image cap">
-              <div class="card-body">
-                <h3 class="card-text">Interactive classroom</h3>
-              </div>
-            </div>
-  
-            <div class="card col-sm-12 col-lg-4"   data-aos="fade-up"
-            data-aos-anchor-placement="top-bottom"
-            data-aos-duration="1000">
-            <a href="./gallery.html"> <img class="card-img-top" src="./Images/anvil.png" alt="Card image cap"></a>
-              <div class="card-body">
-                <h3 class="card-text">Sheet Metal</h3>
-              </div>
-            </div>
 
-            <div class="card col-sm-12 col-lg-4"  data-aos="fade-up"
-            data-aos-anchor-placement="top-bottom"
-            data-aos-duration="1000">
-            <a href="./gallery.html#carpentry_workshop"> <img class="card-img-top" src="./Images/carpentry.png" alt="Card image cap"></a>
-              <div class="card-body">
-                <h3 class="card-text">Carpentry</h3>
-              </div>
-            </div>
-
-            <div class="card col-sm-12 col-md-3"  data-aos="fade-up"
-            data-aos-anchor-placement="top-bottom"
-            data-aos-duration="1000">
-              <a href="./gallery.html"> <img class="card-img-top" src="./Images/yip.png" alt="Card image cap"></a>
-              <div class="card-body">
-                <h3 class="card-text">YIP</h3>
-              </div>
-            </div>
-
-            <div class="card col-sm-12 col-md-3"   data-aos="fade-up"
-            data-aos-anchor-placement="top-bottom"
-            data-aos-duration="1000">
-            <a href="./gallery.html"> <img class="card-img-top" src="./Images/book.png" alt="Card image cap"></a>
-              <div class="card-body">
-                <h3 class="card-text">Library</h3>
-              </div>
-            </div>
-
-            <div class="card col-sm-12 col-md-3"  data-aos="fade-up" data-aos-anchor-placement="top-bottom"
-              data-aos-duration="1000">
-              <a href="./gallery.html"> <img class="card-img-top" src="./Images/littlekite.png" alt="Card image cap"></a>
-              <div class="card-body">
-                <h3 class="card-text">Little kites</h3>
-              </div>
-            </div>
-
-
-            <div class="card col-sm-12 col-lg-3"   data-aos="fade-up"
-            data-aos-anchor-placement="top-bottom"
-            data-aos-duration="1000">
-            <a href="./gallery.html#jrc"><img class="card-img-top" src="./Images/jrc.png" alt="Card image cap"></a>
-              <div class="card-body">
-                <h3 class="card-text">JRC</h3>
-              </div>
-            </div>
-
-            
-
-      
   </div>
-  
+  </div>
+  <!-- facilities -->
+  <section class="facilities" id="facilities">
+    <div class="container">
+      <div class="row">
+        <h2 class="text-center">Facilities</h2>
+        <div class="card  col-sm-12 col-lg-4" data-aos="fade-up" data-aos-anchor-placement="top-bottom"
+          data-aos-duration="1000">
+          <a href="./gallery.html#electronics_workshop"> <img class="card-img-top" src="./Images/circuit.png"
+              alt="Card image cap"></a>
+          <div class="card-body">
+            <h3 class="card-text">Electronics</h3>
+          </div>
+        </div>
+
+        <div class="card  col-sm-12 col-lg-4" data-aos="fade-up" data-aos-anchor-placement="top-bottom"
+          data-aos-duration="1000">
+          <a href="./gallery.html#fitting_workshop"> <img class="card-img-top" src="./Images/wrench.png"
+              alt="Card image cap"></a>
+          <div class="card-body">
+            <h3 class="card-text">Fitting</h3>
+          </div>
+        </div>
+
+        <div class="card col-sm-12 col-lg-4" data-aos="fade-up" data-aos-anchor-placement="top-bottom"
+          data-aos-duration="1000">
+          <a href="./gallery.html#electrical_workshop"> <img class="card-img-top" src="./Images/plug.png"
+              alt="Card image cap"></a>
+          <div class="card-body">
+            <h3 class="card-text">Electrical</h3>
+          </div>
+        </div>
+
+        <div class="card col-sm-12 col-lg-4" data-aos="fade-up" data-aos-anchor-placement="top-bottom"
+          data-aos-duration="1000">
+          <a href="./gallery.html"> <img class="card-img-top" src="./Images/ai.png" alt="Card image cap"></a>
+          <div class="card-body">
+            <h3 class="card-text">Robotics</h3>
+          </div>
+        </div>
+
+        <div class="card col-sm-12 col-lg-4" data-aos="fade-up" data-aos-anchor-placement="top-bottom"
+          data-aos-duration="1000">
+          <a href="./gallery.html#it_lab"> <img class="card-img-top" src="./Images/computer.png"
+              alt="Card image cap"></a>
+          <div class="card-body">
+            <h3 class="card-text">Computer Lab</h3>
+          </div>
+        </div>
+
+        <div class="card col-sm-12 col-lg-4" data-aos="fade-up" data-aos-anchor-placement="top-bottom"
+          data-aos-duration="1000">
+          <a href="./gallery.html#Ground"> <img class="card-img-top" src="./Images/football-pitch.png"
+              alt="Card image cap"></a>
+          <div class="card-body">
+            <h3 class="card-text">Sports & Games</h3>
+          </div>
+        </div>
+
+        <div class="card col-sm-12 col-lg-4" data-aos="fade-up" data-aos-anchor-placement="top-bottom"
+          data-aos-duration="1000">
+          <img class="card-img-top" src="./Images/education.png" alt="Card image cap">
+          <div class="card-body">
+            <h3 class="card-text">Interactive classroom</h3>
+          </div>
+        </div>
+
+        <div class="card col-sm-12 col-lg-4" data-aos="fade-up" data-aos-anchor-placement="top-bottom"
+          data-aos-duration="1000">
+          <a href="./gallery.html"> <img class="card-img-top" src="./Images/anvil.png" alt="Card image cap"></a>
+          <div class="card-body">
+            <h3 class="card-text">Sheet Metal</h3>
+          </div>
+        </div>
+
+        <div class="card col-sm-12 col-lg-4" data-aos="fade-up" data-aos-anchor-placement="top-bottom"
+          data-aos-duration="1000">
+          <a href="./gallery.html#carpentry_workshop"> <img class="card-img-top" src="./Images/carpentry.png"
+              alt="Card image cap"></a>
+          <div class="card-body">
+            <h3 class="card-text">Carpentry</h3>
+          </div>
+        </div>
+
+        <div class="card col-sm-12 col-md-3" data-aos="fade-up" data-aos-anchor-placement="top-bottom"
+          data-aos-duration="1000">
+          <a href="./gallery.html"> <img class="card-img-top" src="./Images/yip.png" alt="Card image cap"></a>
+          <div class="card-body">
+            <h3 class="card-text">YIP</h3>
+          </div>
+        </div>
+
+        <div class="card col-sm-12 col-md-3" data-aos="fade-up" data-aos-anchor-placement="top-bottom"
+          data-aos-duration="1000">
+          <a href="./gallery.html"> <img class="card-img-top" src="./Images/book.png" alt="Card image cap"></a>
+          <div class="card-body">
+            <h3 class="card-text">Library</h3>
+          </div>
+        </div>
+
+        <div class="card col-sm-12 col-md-3" data-aos="fade-up" data-aos-anchor-placement="top-bottom"
+          data-aos-duration="1000">
+          <a href="./gallery.html"> <img class="card-img-top" src="./Images/littlekite.png" alt="Card image cap"></a>
+          <div class="card-body">
+            <h3 class="card-text">Little kites</h3>
+          </div>
+        </div>
+
+
+        <div class="card col-sm-12 col-lg-3" data-aos="fade-up" data-aos-anchor-placement="top-bottom"
+          data-aos-duration="1000">
+          <a href="./gallery.html#jrc"><img class="card-img-top" src="./Images/jrc.png" alt="Card image cap"></a>
+          <div class="card-body">
+            <h3 class="card-text">JRC</h3>
+          </div>
+        </div>
+
+
+
+
+      </div>
+
   </section>
-  
+
   <div class="hi">
     <h2>Gallery</h2>
     <img src="./gallery/School_Bord.jpeg" alt="Description of the image">
-   <a href="./gallery.html"> <button class="view-more-btn">View More</button></a>
-</div>
+    <a href="./gallery.html"> <button class="view-more-btn">View More</button></a>
+  </div>
 
 
- <!-- achivements card -->
-   
- <div class="achievements-section" style="height: 700px;">
-  <h2 class="text-center">Achievements</h2>
-  
-  
-<!-- Slider main container -->
-<div class="swiper">
-  <!-- Additional required wrapper -->
-  <div class="swiper-wrapper">
-    <!-- Slides -->
-    <div class="swiper-slide">
-      <div class="swiper-slide">
-        <div class="achievement-card">
-          <h3>Full A+ 2023-24 batch</h3>
-          <img src="./Images/full+news.jpg" class="col-sm-12" alt="">
+  <!-- achivements card -->
+
+  <div class="achievements-section">
+    <p class="eyebrow text-center">Proud moments</p>
+    <h2 class="text-center">Achievements</h2>
+
+
+    <!-- Slider main container -->
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="achievement-card">
+            <h3>Full A+ 2023-24 batch</h3>
+            <img src="./Images/full+news.jpg" class="col-sm-12" alt="">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="achievement-card">
+            <h3>Tech fest Winners</h3>
+            <img src="./Images/achivement.jpg" alt="">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="achievement-card">
+            <h3>Kerala State Youth Welfare Board, Science Quiz, First Prize</h3>
+            <img src="./gallery/quiz.jpg" class="col-sm-12" alt="">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="achievement-card">
+            <h3>RBI Financial Literacy Quiz</h3>
+            <img src="./gallery/ribquizwinners.jpg" alt="">
+          </div>
         </div>
       </div>
-      <div class="achievement-card">
-        <h3>Tech fest Winners</h3>
-        <img src="./Images/achivement.jpg" alt="">
-      </div>
     </div>
-    <div class="swiper-slide">
-      <div class="achievement-card">
-        <h3>Kerala State Youth Welfare Board, Science Quiz, First Prize</h3>
-        <img src="./gallery/quiz.jpg" class="col-sm-12" alt="">
-      </div>
-    </div>
-    <div class="swiper-slide">
-      <div class="achievement-card">
-        <h3>RBI Financial Literacy Quiz</h3>
-        <img src="./gallery/ribquizwinners.jpg" alt="">
-      </div>
-    </div>
+
   </div>
-  
-</div>
 
- </div>
-
-<!-- Admission details-->
-<h2 class="text-center">Admission Brochure</h2>
-<div>
-  <div class="row text-center justify-content-center"> 
-    <div class="col-sm-12 col-lg-6">
+  <!-- Admission details-->
+  <h2 class="text-center">Admission Brochure</h2>
+  <div>
+    <div class="row text-center justify-content-center">
+      <div class="col-sm-12 col-lg-6">
         <div class="card-body hi">
-            <img src="./Images/admission brochure1.jpg" alt="">
+          <img src="./Images/admission brochure1.jpg" alt="">
         </div>
-    </div>
-    <div class="col-sm-12 col-lg-6">
+      </div>
+      <div class="col-sm-12 col-lg-6">
         <div class="card-body hi">
-            <img src="./Images/admission brochure2.jpg" alt="">
+          <img src="./Images/admission brochure2.jpg" alt="">
         </div>
-    </div>
-    <div class="col-sm-12 col-lg-6">
+      </div>
+      <div class="col-sm-12 col-lg-6">
         <div class="card-body hi">
-            <img src="./Images/admission started 2025.jpg" alt="">
+          <img src="./Images/admission started 2025.jpg" alt="">
         </div>
-    </div>
-</div>
-  </div>
-  
-
-</div>
-<div class="row adm" id="admission">
-  
-  
-  <div class="col-sm-12 col-lg-3">
-    <div class="card">
-      <div class="card-body">
-        <h5 class="card-title">MURALI KANISANPARAMBIL</h5>
-        <p class="card-text" style="color: #6C757D; font-size: smaller;"><b>Admission co-ordinator</b> </p>
-        <p style="font-size: smaller;"><b>Contact: +919447705609</b></p>
-        <a href="tel:+919447705609" class="btn btn-outline-dark "> Contact <i class="fa fa-phone"
-            aria-hidden="true"></i></a>
       </div>
     </div>
   </div>
 
-  <video controls autoplay muted>
-    <source src="./Images/THS VARAPPETTY -DOCUMENTARY.mp4" type="video/mp4">
 
-  </video>
-
-  <div class="col-sm-12 col-lg-3">
-    <div class="card">
-      <div class="card-body">
-        <h5 class="card-title">UVAIS C.A</h5>
-        <p class="card-text" style="color: #6C757D; font-size: smaller;"><b>Help Desk Manager </b> </p>
-        <p style="font-size: smaller;"><b>Contact: +917561845547</b></p>
-        <a href="tel:+917561845547" class="btn btn-outline-dark "> Contact <i class="fa fa-phone"
-            aria-hidden="true"></i></a>
-      </div>
-    </div>
   </div>
+  <div class="row adm" id="admission">
 
-  <div class="prospectus text-center">
-    <span class="prospectus-button">
-      <a href="https://www.polyadmission.org/ths/files/ths-admission-prospectus-2023.pdf">
-        <svg aria-hidden="true" class="e-font-icon-svg e-fas-link" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
-          <path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"></path>
-        </svg>
-        Download prospectus</a>
-    </span>
-    <span class="prospectus-button">
-      <a href="https://www.polyadmission.org/ths/index.php?r=site%2Fhome">
-        <svg aria-hidden="true" class="e-font-icon-svg e-fas-link" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
-          <path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"></path>
-        </svg>
-        Registration portal</a>
-    </span>
-  </div>
-</div>
 
-<div class="contact_us_2">
-  <div class="container-contact">
-    <form class="form-box" id="contactForm">
-      <div class="form-wrapper">
-        <h2 class="contactus-head">Get in Touch</h2>
-        <p class="contactus-subhead">We'd love to hear from you.</p>
-        <div class="form-fields">
-          <div class="field">
-            <label for="FirstName">First Name</label>
-            <input id="FirstName" name="FirstName" placeholder="Enter first name..." type="text">
-          </div>
-          <div class="field">
-            <label for="LastName">Last Name</label>
-            <input id="LastName" name="LastName" placeholder="Enter last name..." type="text">
-          </div>
-          <div class="field">
-            <label for="Email">Email</label>
-            <input id="Email" name="Email" placeholder="Enter email..." type="email">
-          </div>
-          <div class="field">
-            <label for="PhoneNumber">Phone Number</label>
-            <input id="PhoneNumber" name="PhoneNumber" placeholder="Enter phone number..." type="tel">
-          </div>
-          <div class="field">
-            <label for="Message">Message</label>
-            <textarea id="Message" name="Message" placeholder="Enter your message..."></textarea>
-          </div>
+    <div class="col-sm-12 col-lg-3">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">MURALI KANISANPARAMBIL</h5>
+          <p class="card-text" style="color: #6C757D; font-size: smaller;"><b>Admission co-ordinator</b> </p>
+          <p style="font-size: smaller;"><b>Contact: +919447705609</b></p>
+          <a href="tel:+919447705609" class="btn btn-outline-dark "> Contact <i class="fa fa-phone"
+              aria-hidden="true"></i></a>
         </div>
-        <button type="submit" class="submit-btn" id="submitBtn">Submit</button>
       </div>
-    </form>
-  </div>
-</div>
+    </div>
 
-<!-- Hidden form for submitting data to Google Forms -->
-<form id="google-form" action="https://docs.google.com/forms/d/e/1FAIpQLSfOMUIjQ9bL-RMSMbLmpuakkK04TgtRcj7muq5ImUPrq1oysA/formResponse" method="POST" style="display: none;">
-  <input type="hidden" name="entry.566466427" value="">
-  <input type="hidden" name="entry.1904256212" value="">
-  <input type="hidden" name="entry.360813075" value="">
-  <input type="hidden" name="entry.959535505" value="">
-  <input type="hidden" name="entry.1842983877" value="">
-</form>
+    <video controls autoplay muted>
+      <source src="./Images/THS VARAPPETTY -DOCUMENTARY.mp4" type="video/mp4">
+
+    </video>
+
+    <div class="col-sm-12 col-lg-3">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">UVAIS C.A</h5>
+          <p class="card-text" style="color: #6C757D; font-size: smaller;"><b>Help Desk Manager </b> </p>
+          <p style="font-size: smaller;"><b>Contact: +917561845547</b></p>
+          <a href="tel:+917561845547" class="btn btn-outline-dark "> Contact <i class="fa fa-phone"
+              aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="prospectus text-center">
+      <span class="prospectus-button">
+        <a href="https://www.polyadmission.org/ths/files/ths-admission-prospectus-2023.pdf">
+          <svg aria-hidden="true" class="e-font-icon-svg e-fas-link" viewBox="0 0 512 512"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z">
+            </path>
+          </svg>
+          Download prospectus</a>
+      </span>
+      <span class="prospectus-button">
+        <a href="https://www.polyadmission.org/ths/index.php?r=site%2Fhome">
+          <svg aria-hidden="true" class="e-font-icon-svg e-fas-link" viewBox="0 0 512 512"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z">
+            </path>
+          </svg>
+          Registration portal</a>
+      </span>
+    </div>
+  </div>
+
+  <div class="contact_us_2">
+    <div class="container-contact">
+      <form class="form-box" id="contactForm">
+        <div class="form-wrapper">
+          <h2 class="contactus-head">Get in Touch</h2>
+          <p class="contactus-subhead">We'd love to hear from you.</p>
+          <div class="form-fields">
+            <div class="field">
+              <label for="FirstName">First Name</label>
+              <input id="FirstName" name="FirstName" placeholder="Enter first name..." type="text">
+            </div>
+            <div class="field">
+              <label for="LastName">Last Name</label>
+              <input id="LastName" name="LastName" placeholder="Enter last name..." type="text">
+            </div>
+            <div class="field">
+              <label for="Email">Email</label>
+              <input id="Email" name="Email" placeholder="Enter email..." type="email">
+            </div>
+            <div class="field">
+              <label for="PhoneNumber">Phone Number</label>
+              <input id="PhoneNumber" name="PhoneNumber" placeholder="Enter phone number..." type="tel">
+            </div>
+            <div class="field">
+              <label for="Message">Message</label>
+              <textarea id="Message" name="Message" placeholder="Enter your message..."></textarea>
+            </div>
+          </div>
+          <button type="submit" class="submit-btn" id="submitBtn">Submit</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Hidden form for submitting data to Google Forms -->
+  <form id="google-form"
+    action="https://docs.google.com/forms/d/e/1FAIpQLSfOMUIjQ9bL-RMSMbLmpuakkK04TgtRcj7muq5ImUPrq1oysA/formResponse"
+    method="POST" style="display: none;">
+    <input type="hidden" name="entry.566466427" value="">
+    <input type="hidden" name="entry.1904256212" value="">
+    <input type="hidden" name="entry.360813075" value="">
+    <input type="hidden" name="entry.959535505" value="">
+    <input type="hidden" name="entry.1842983877" value="">
+  </form>
 
 
   <!-- WhatsApp contact    -->
   <a href="https://wa.me/+919447705609" class="btn-whatsapp-pulse btn-whatsapp-pulse-border">
-	<i class="fab fa-whatsapp"></i>
-</a>
-<!-- footer -->
-<footer class="footer">
-  <div class="container">
-    <div class="row">
-      <div class="footer-col">
-        <h4>Motto</h4>
-        <p>Tech&nbsp;Wisdom,&nbsp;&nbsp;Future&nbsp;Leaders.</p>
-      </div>
-      <div class="footer-col">
-        <h4>Go to</h4>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#about">About us</a></li>
-          <li><a href="#admission">Contact Us</a></li>
-          <li><a href="#facilities">Facilities</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>get help</h4>
-        <ul>
-          <li><a href="https://samagra.kite.kerala.gov.in/#/home/page">Academics</a></li>
-          <li><a href="https://www.polyadmission.org/ths/index.php?r=site%2Fhome">Admission</a></li>
-          <li><a href="https://schoolwiki.in/%E0%B4%9C%E0%B4%BF.%E0%B4%B1%E0%B5%8D%E0%B4%B1%E0%B4%BF.%E0%B4%8E%E0%B4%9A%E0%B5%8D%E0%B4%9A%E0%B5%8D.%E0%B4%8E%E0%B4%B8%E0%B5%8D.%E0%B4%85%E0%B4%9F%E0%B4%BF%E0%B4%AE%E0%B4%BE%E0%B4%B2%E0%B4%BF">school wiki</a></li>
-          <li><a href="./gallery.html">Gallery</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Contact us</h4>
-        <div class="col-md-4 col-lg-3 col-xl-3">
-          <p class="pcont">
-            <a href="https://www.google.com/maps/place/Technical+High+School,Varappetty/@10.0336685,76.6296444,17z/data=!3m1!4b1!4m6!3m5!1s0x3b07e62cfc66874d:0x100ff338c1e97765!8m2!3d10.0336632!4d76.6322193!16s%2Fg%2F11dx95x7gw?entry=ttu"><i class="fas fa-home"></i> Varappetty, Kerala 6855000, India</a></p>
-            <p class="pcont">
-            <a href="mailto:gthsvarappetty@gmail.com"><i class="fas fa-envelope"></i> gthsvarappetty@gmail.com</a></p>
-            <p class="pcont">
-            <a href="tel:+9104864222931"><i class="fas fa-phone"></i> 04864222931</a></p>
-          <p>
-        </p></div>
-      </div>
-      <div class="footer-col media">
-        <h4>follow us</h4>
-        <div class="social-links">
-          <a href="#"><i class="fab fa-facebook-f"></i></a>
-          <a href="#"><i class="fab fa-twitter"></i></a>
-          <a href="#"><i class="fab fa-instagram"></i></a>
-          <a href="https://www.instagram.com/g.t.h.s_varapetty_official?igsh=bWZ2aGlsYjlobnEz"><i class="fab fa-linkedin-in"></i></a>
-        </div>
-        <div>
-        
-      </div>
-      
-    </div>
-    
-   <div class="text-center">
-  <hr class="text-light">
-  <a href="https://weblo0m.vercel.app/">
-    <img src="./Images/webcodge-white.png" alt="Logo" style="height: 50px; width: 200px;">
+    <i class="fab fa-whatsapp"></i>
   </a>
-</div>
-  </div>
-  
-</footer>
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-<script src="./script.js"></script>
+  <!-- footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="footer-col">
+          <h4>Motto</h4>
+          <p>Tech&nbsp;Wisdom,&nbsp;&nbsp;Future&nbsp;Leaders.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Go to</h4>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About us</a></li>
+            <li><a href="#admission">Contact Us</a></li>
+            <li><a href="#facilities">Facilities</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>get help</h4>
+          <ul>
+            <li><a href="https://samagra.kite.kerala.gov.in/#/home/page">Academics</a></li>
+            <li><a href="https://www.polyadmission.org/ths/index.php?r=site%2Fhome">Admission</a></li>
+            <li><a
+                href="https://schoolwiki.in/%E0%B4%9C%E0%B4%BF.%E0%B4%B1%E0%B5%8D%E0%B4%B1%E0%B4%BF.%E0%B4%8E%E0%B4%9A%E0%B5%8D%E0%B4%9A%E0%B5%8D.%E0%B4%8E%E0%B4%B8%E0%B5%8D.%E0%B4%85%E0%B4%9F%E0%B4%BF%E0%B4%AE%E0%B4%BE%E0%B4%B2%E0%B4%BF">school
+                wiki</a></li>
+            <li><a href="./gallery.html">Gallery</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact us</h4>
+          <div class="col-md-4 col-lg-3 col-xl-3">
+            <p class="pcont">
+              <a
+                href="https://www.google.com/maps/place/Technical+High+School,Varappetty/@10.0336685,76.6296444,17z/data=!3m1!4b1!4m6!3m5!1s0x3b07e62cfc66874d:0x100ff338c1e97765!8m2!3d10.0336632!4d76.6322193!16s%2Fg%2F11dx95x7gw?entry=ttu"><i
+                  class="fas fa-home"></i> Varappetty, Kerala 6855000, India</a>
+            </p>
+            <p class="pcont">
+              <a href="mailto:gthsvarappetty@gmail.com"><i class="fas fa-envelope"></i> gthsvarappetty@gmail.com</a>
+            </p>
+            <p class="pcont">
+              <a href="tel:+9104864222931"><i class="fas fa-phone"></i> 04864222931</a>
+            </p>
+            <p>
+            </p>
+          </div>
+        </div>
+        <div class="footer-col media">
+          <h4>follow us</h4>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.instagram.com/g.t.h.s_varapetty_official?igsh=bWZ2aGlsYjlobnEz"><i
+                class="fab fa-linkedin-in"></i></a>
+          </div>
+          <div>
+
+          </div>
+
+        </div>
+
+        <div class="text-center">
+          <hr class="text-light">
+          <a href="https://weblo0m.vercel.app/">
+            <img src="./Images/webcodge-white.png" alt="Logo" style="height: 50px; width: 200px;">
+          </a>
+        </div>
+      </div>
+
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="./script.js" defer></script>
+
 </body>
+
 </html>
