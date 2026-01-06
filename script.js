@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   const eventsData = [
-    // {
+    // eg format :- {
     //   title: 'School Anniversary',
     //   date: '11 February 2025',
     //   location: 'Auditorium',
@@ -40,12 +40,12 @@ document.addEventListener('DOMContentLoaded', () => {
     //   location: 'Admin Block',
     //   description: 'Guided assistance for new applicants between 10 AM and 3 PM.'
     // },
-    {
-      title: 'Robotics Lab Demo',
-      date: 'First Saturday Monthly',
-      location: 'School Innovation Lab',
-      description: 'Hands-on sessions featuring student prototypes and maker builds.'
-    }
+    // {
+    //   title: 'Robotics Lab Demo',
+    //   date: 'First Saturday Monthly',
+    //   location: 'School Innovation Lab',
+    //   description: 'Hands-on sessions featuring student prototypes and maker builds.'
+    // }
   ];
 
   const eventsContainer = document.getElementById('events-container');
