@@ -48,21 +48,36 @@ document.addEventListener('DOMContentLoaded', () => {
     // }
   ];
 
-  const eventsContainer = document.getElementById('events-container');
-  if (eventsContainer) {
+ const eventsContainer = document.getElementById('events-container');
+
+if (eventsContainer) {
+  const mainContainer = eventsContainer.closest('.main-container');
+
+  if (eventsData.length === 0) {
+    // Hide the whole events section (heading + container)
+    if (mainContainer) {
+      mainContainer.style.display = 'none';
+    }
+  } else {
+    if (mainContainer) {
+      mainContainer.style.display = 'block';
+    }
+
     eventsContainer.innerHTML = '';
+
     eventsData.forEach(event => {
       const wrapper = document.createElement('div');
       wrapper.classList.add('event');
       wrapper.innerHTML = `
         <h2>${event.title}</h2>
-        <p>Date: ${event.date}</p>
-        <p>Location: ${event.location}</p>
+        <p><strong>Date:</strong> ${event.date}</p>
+        <p><strong>Location:</strong> ${event.location}</p>
         <p>${event.description}</p>
       `;
       eventsContainer.appendChild(wrapper);
     });
   }
+}
 
   const releaseDate = new Date('May 9, 2025 10:00:00').getTime();
   const statusText = document.getElementById('status-text');
