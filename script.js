@@ -28,12 +28,6 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   const eventsData = [
-    {
-    title: 'School Anniversary',
-    date: '11 February 2025',
-    location: 'Auditorium',
-    description: 'Community gathering, project expo and cultural showcase.'
-  },
     // eg format :- {
     //   title: 'School Anniversary',
     //   date: '11 February 2025',
@@ -204,5 +198,6 @@ window.addEventListener('load', () => {
     });
   }
 });
+
 
 
