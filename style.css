@@ -162,7 +162,7 @@ nav{
 .hero .hero-img{
     width: 100%;
     min-height: 100vh;
-    background: url(./Images/School_img.jpg) center/cover no-repeat;
+    background: url(./Images/schoolimg.jpeg) center/cover no-repeat;
     position: relative;
 }
 
@@ -1265,3 +1265,4 @@ ul{
         .intro {
             border: none;
         }
+
