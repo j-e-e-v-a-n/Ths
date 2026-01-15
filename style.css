@@ -598,7 +598,7 @@ nav{
 
 .tutor-cards .card{
 	height: 100%;
-    padding-bottom: 0px;
+    padding-bottom: 0;
 }
 
 .tutor-cards .card img{
@@ -1268,6 +1268,7 @@ ul{
         .intro {
             border: none;
         }
+
 
 
 
