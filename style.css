@@ -602,8 +602,9 @@ nav{
 
 .tutor-cards .card img{
     justify-content: center;
-    height: 300;
-    width: 228;
+    height: 220px;
+    width: 100%;
+	object-fit: cover;
     border-radius: 8px;
 }
 
@@ -1266,6 +1267,7 @@ ul{
         .intro {
             border: none;
         }
+
 
 
 
