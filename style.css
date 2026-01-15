@@ -556,6 +556,7 @@ nav{
 
 .card-image img{
     width: 200px;
+	height: 220px;
     border-radius: 50%;
     border: 1px solid var(--border-color);
     padding: 5px;
@@ -1265,6 +1266,7 @@ ul{
         .intro {
             border: none;
         }
+
 
 
 
